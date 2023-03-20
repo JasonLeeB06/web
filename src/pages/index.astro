@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/page.astro";
+import Icon from "astro-icon";
+import Socials from "../components/socials.astro";
+import Status from "../components/status.astro";
+---
+
+<Layout title="Jason Lee Bärwald">
+    <div class="center">
+
+        <img src="/avatar.png" alt="Avatar" class="avatar" />
+
+        <h1>Jason Lee Bärwald</h1>
+
+        <div class="pronouns">
+            he/him
+        </div>
+
+        <div class="location">
+            <Icon name="fa:map-marker" /> Wacken, Germany
+        </div>
+
+    </div>
+
+    <Socials />
+
+    <br>
+
+    <div class="center">
+        <Status />
+    </div>
+</Layout>

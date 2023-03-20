@@ -1,0 +1,42 @@
+[
+    {
+        "url": "https://koyu.space/@jasonb",
+        "text": "@jasonb",
+        "icon":  {
+            "style": "simple-icons",
+            "name": "mastodon"
+        }
+    },
+    {
+        "url": "https://matrix.to/#/@jasonb:mozilla.org",
+        "text": "@jasonb:mozilla.org",
+        "icon":  {
+            "style": "simple-icons",
+            "name": "matrix"
+        }
+    },
+    {
+        "url": "https://www.instagram.com/xx_jason_xx06",
+        "text": "@xx_jason_xx06",
+        "icon": {
+            "style": "simple-icons",
+            "name": "instagram"
+        }
+    },
+    {
+        "url": "https://github.com/JasonLeeB06",
+        "text": "@JasonLeeB06",
+        "icon": {
+            "style": "simple-icons",
+            "name": "github"
+        }
+    },
+    {
+        "url": "mailto:me@jasonb.de",
+        "text": "me@jasonb.de",
+        "icon": {
+            "style": "simple-icons",
+            "name": "mailru"
+        }
+    }
+]

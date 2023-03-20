@@ -1,0 +1,103 @@
+@import "variables";
+
+body {
+    background: $bg;
+    color: #fff;
+    font-family: Space Grotesk;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+main {
+    background: $lb;
+    width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 40px 10px;
+}
+
+svg {
+    height: 11pt;
+    vertical-align: middle;
+}
+
+.pronouns {
+    display: block;
+    color: $inv;
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 0;
+    margin-top: -30px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.socials {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.socials a {
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    border-bottom: rgba(255,255,255,0.2) 1px solid;
+}
+
+.socials a:hover {
+    border-bottom: $hover 2px solid;
+    margin-bottom: -1px;
+}
+
+.socials svg {
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.location {
+    color: $inv2;
+    margin-top: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+footer,
+footer a {
+    margin-top: 40px;
+    color: lighten($lb, 25%);
+    font-size: 11pt;
+    text-align: center;
+}
+
+#status {
+    background: $inv3;
+    color: #000;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-weight: 100;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#status p {
+    margin: 0;
+}
+
+#status-time a {
+    color: #000;
+    font-weight: 100;
+    font-size: 0.7em;
+}
