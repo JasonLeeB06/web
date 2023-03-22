@@ -1,7 +1,7 @@
 [
     {
-        "url": "https://koyu.space/@jasonb@koyu.space",
-        "text": "@jasonb",
+        "url": "https://koyu.space/@jasonb",
+        "text": "@jasonb@koyu.space",
         "icon":  {
             "style": "simple-icons",
             "name": "mastodon"
