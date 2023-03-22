@@ -32,6 +32,14 @@
         }
     },
     {
+        "url": "https://discord.com/users/831832446001348628",
+        "text": "Jason B.#8810",
+        "icon": {
+            "style": "simple-icons",
+            "name": "discord"
+        }
+    },
+    {
         "url": "mailto:me@jasonb.de",
         "text": "me@jasonb.de",
         "icon": {
