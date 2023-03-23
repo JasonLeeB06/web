@@ -13,11 +13,11 @@ $(document).ready(function() {
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
-      $('#birthdate-countdown').html(days + " Days, " + hours + " Hours, " + minutes + " Minutes, " + seconds + " Seconds");
+      $('#cakeday-countdown').html(days + " Days, " + hours + " Hours, " + minutes + " Minutes, " + seconds + " Seconds");
       
       if (distance < 0) {
         clearInterval(countdownInterval);
-        $('#birthdate-countdown').html("Happy Birthday!");
+        $('#cakeday-countdown').html("Happy Birthday!");
       }
 
       if (new Date().getFullYear() > new Date(endDate).getFullYear()) {

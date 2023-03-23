@@ -2,9 +2,9 @@
 import Layout from "../layouts/page.astro";
 import Icon from "astro-icon";
 import Socials from "../components/socials.astro";
-import MstdnStatus from "../components/mstdn-status.astro";
 import Status from "../components/status.astro";
-import Birthdate from "../components/birthdate.astro";
+import Work from "../components/work.astro";
+import Cakeday from "../components/cakeday.astro";
 ---
 
 <Layout title="Jason Lee Bärwald">
@@ -19,25 +19,17 @@ import Birthdate from "../components/birthdate.astro";
         </div>
 
         <div class="location">
-            <Icon name="fa:map-marker" /> Wacken, Germany
+            <Icon name="fa:map-marker" style="vertical-align:baseline;" /> Wacken, Germany
         </div>
 
-        <div class="birthdate">
-            <Birthdate />
-        </div>
+        <Cakeday />
 
-    </div>
-
-
-    <div class="center">
-        <Status />
+        <Work />
     </div>
 
     <Socials />
 
     <br>
 
-    <div class="center">
-        <MstdnStatus />
-    </div>
+    <Status />
 </Layout>
