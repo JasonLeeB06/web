@@ -48,6 +48,14 @@
         }
     },
     {
+        "url": "https://www.linkedin.com/in/jason-lee-b%C3%A4rwald-74a73126a/",
+        "text": "Jason Lee Bärwald",
+        "icon": {
+            "style": "simple-icons",
+            "name": "linkedin"
+        }
+    },
+    {
         "url": "mailto:me@jasonb.de",
         "text": "me@jasonb.de",
         "icon": {
