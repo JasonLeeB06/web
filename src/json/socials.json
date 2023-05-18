@@ -1,10 +1,10 @@
 [
     {
-        "url": "https://koyu.space/@jasonb",
-        "text": "@jasonb@koyu.space",
+        "url": "https://cutebox.cc/@jasonb",
+        "text": "@jasonb@cutebox.cc",
         "icon":  {
-            "style": "simple-icons",
-            "name": "mastodon"
+            "style": "ph",
+            "name": "sparkle-light"
         }
     },
     {
