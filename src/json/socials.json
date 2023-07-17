@@ -1,13 +1,5 @@
 [
     {
-        "url": "https://cutebox.cc/@jasonb",
-        "text": "@jasonb@cutebox.cc",
-        "icon":  {
-            "style": "ph",
-            "name": "sparkle-light"
-        }
-    },
-    {
         "url": "https://matrix.to/#/@jasonb:mozilla.org",
         "text": "@jasonb:mozilla.org",
         "icon":  {
