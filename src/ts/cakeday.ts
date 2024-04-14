@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 $(document).ready(function() {
-      var endDate = new Date("Feb 20, 2023 04:29:00").getTime();
+      var endDate = new Date("Feb 20, 2025 04:29:00").getTime();
   
       var countdownInterval = setInterval(function() {
       var now = new Date().getTime();
@@ -22,10 +22,8 @@ $(document).ready(function() {
 
       if (new Date().getFullYear() > new Date(endDate).getFullYear()) {
         endDate = new Date("Feb 20, " + (new Date().getFullYear() + 1) + " 04:29:00").getTime();
-        console.log("New Year");
       } else {
         endDate = new Date("Feb 20, " + new Date().getFullYear() + " 04:29:00").getTime();
-        console.log("Same Year");
       }
     }, 1000);
 });
