@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 $(document).ready(function() {
-      var endDate = new Date("Feb 20, 2023 04:29:00").getTime();
+      var endDate = new Date("Feb 20, 2024 04:29:00").getTime();
   
       var countdownInterval = setInterval(function() {
       var now = new Date().getTime();
