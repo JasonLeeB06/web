@@ -12,6 +12,13 @@ h1 {
     font-weight: bold;
 }
 
+a {
+    margin-top: 40px;
+    color: lighten($lb, 25%);
+    font-size: 15pt;
+    text-align: center;
+}
+
 main {
     background: $lb;
     margin: 40px auto;

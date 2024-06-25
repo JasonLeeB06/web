@@ -1,10 +1,10 @@
 [
     {
-        "url": "https://matrix.to/#/@jasonb:mozilla.org",
-        "text": "@jasonb:mozilla.org",
-        "icon":  {
+        "url": "mailto:me@jasonb.de",
+        "text": "me@jasonb.de",
+        "icon": {
             "style": "simple-icons",
-            "name": "matrix"
+            "name": "mailru"
         }
     },
     {
@@ -45,14 +45,6 @@
         "icon": {
             "style": "simple-icons",
             "name": "linkedin"
-        }
-    },
-    {
-        "url": "mailto:me@jasonb.de",
-        "text": "me@jasonb.de",
-        "icon": {
-            "style": "simple-icons",
-            "name": "mailru"
         }
     }
 ]
