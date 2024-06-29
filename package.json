@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.5",
-    "astro": "^3.6.4",
-    "astro-icon": "^0.8.1",
+    "astro": "^4.11.3",
+    "astro-icon": "^1.1.0",
     "javascript-time-ago": "^2.5.9",
     "jquery": "^3.7.1",
-    "sass": "^1.69.5"
+    "sass": "^1.77.6"
   }
 }
