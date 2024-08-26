@@ -22,5 +22,8 @@
     "javascript-time-ago": "^2.5.10",
     "jquery": "^3.7.1",
     "sass": "^1.77.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
   }
 }
