@@ -46,5 +46,13 @@
             "style": "simple-icons",
             "name": "linkedin"
         }
+    },
+    {
+        "url": "https://paypal.me/jasonleeb06",
+        "text": "Spenden",
+        "icon": {
+            "style": "simple-icons",
+            "name": "paypal"
+        }
     }
 ]
