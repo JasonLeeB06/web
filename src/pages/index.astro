@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/page.astro";
-import Icon from "astro-icon";
+import { Icon } from 'astro-icon/components';
 import Socials from "../components/socials.astro";
 import Work from "../components/work.astro";
 import Cakeday from "../components/cakeday.astro";
@@ -19,7 +19,7 @@ import Affiliate from "../components/affiliate.astro";
         </div>
 
         <div class="location">
-            <Icon name="fa:map-marker" style="vertical-align:baseline;" /> Wacken, Germany
+            <Icon name="mdi:map-marker" style="vertical-align:baseline;" /> Wacken, Germany
         </div>
 
         <Cakeday />
