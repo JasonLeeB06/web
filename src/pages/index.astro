@@ -5,22 +5,47 @@ import Socials from "../components/socials.astro";
 import Work from "../components/work.astro";
 import Cakeday from "../components/cakeday.astro";
 import Affiliate from "../components/affiliate.astro";
+import { Image } from 'astro:assets';
+import SpotifyCard from '../components/SpotifyCard.jsx';
 ---
 
 <Layout title="Jason Lee Bärwald">
+    <div style="text-align: right;">
+        <div id="language-toggle" class="language-toggle">
+            <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            <button class="lang-btn" onclick="setLanguage('de')">Deutsch</button>
+        </div>
+    </div>
     <div class="center">
 
-        <img src="/avatar.png" alt="Avatar" class="avatar" />
+        <Image 
+            src="/avatar.png" 
+            alt="Avatar" 
+            class="avatar" 
+            width={150} 
+            height={150} 
+            loading="eager" 
+        />
 
-        <h1>Jason Lee Bärwald</h1>
+        <h1>Jason Lee Bärwald</h1><br>
 
         <div class="pronouns">
-            he/him
+            <span id="pronouns">he/him</span>
         </div>
 
         <div class="location">
-            <Icon name="mdi:map-marker" style="vertical-align:baseline;" /> Wacken, Germany
+            <Icon name="mdi:map-marker" style="vertical-align:middle;" /> <span id="location">Wacken, Germany</span>
         </div>
+            
+        <div class="bio">
+            <p>
+                <Icon name="mdi:calendar" style="vertical-align:middle;" /> <span id="age">18 years old (born 2006)</span><br />
+                <Icon name="mdi:heart-outline" style="vertical-align:middle;" /> <span id="love">In a Relationship</span><br />
+                <Icon name="mdi:briefcase" style="vertical-align:middle;" /> <span id="job">Trainee warehouse clerk at Edeka Nord</span><br />
+            </p>
+        </div>
+
+        <SpotifyCard client:load />
 
         <Cakeday />
 
@@ -30,4 +55,67 @@ import Affiliate from "../components/affiliate.astro";
     </div>
 
     <Socials />
+
+    <style>
+        .center {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .pronouns {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .language-toggle {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            background-color: #4A90E2;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background-color: #357ABD;
+        }
+
+        .lang-btn:focus {
+            outline: none;
+            box-shadow: 0 0 5px #4A90E2;
+        }
+
+        .bio {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+    </style>
 </Layout>

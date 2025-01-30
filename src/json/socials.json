@@ -49,7 +49,7 @@
     },
     {
         "url": "https://paypal.me/jasonleeb06",
-        "text": "Spenden",
+        "text": "<span id='paypal'>Donate me</span>",
         "icon": {
             "style": "simple-icons",
             "name": "paypal"

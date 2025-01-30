@@ -5,9 +5,16 @@ import social from "../json/socials.json";
 
 <div class="socials">
   {social.map((e) => (
-    <Icon name={`mdi:${e.icon.name}`} />  <a href={e.url} class="social" target="_blank" rel="noopener me" set:text={e.text}></a><br>
+    <div>
+      <Icon name={`mdi:${e.icon.name}`} />
+      <a href={e.url} class="social" target="_blank" rel="noopener me">
+        <span class="text" set:html={e.text}></span>
+      </a>
+      <br />
+    </div>
   ))}
 </div>
+
 
 <style>
     .fa-matrix-org,

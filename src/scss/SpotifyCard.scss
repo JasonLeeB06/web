@@ -1,0 +1,75 @@
+.spotify-card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1DB954, #08b9e6);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin: 10px auto;
+    transition: background 0.3s;
+  }
+
+  .album-cover {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+  }
+  
+  .song-info {
+    margin-left: 15px;
+    flex: 1;
+  }
+  
+  .song-title {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .song-title:hover {
+    color: #3e3b5f;
+  }
+  
+  .artist {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 5px;
+  }
+
+  .album {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 5px;
+  }
+
+  .release-date {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 5px;
+  }
+  
+  .not-playing {
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  .progress-bar {
+    background: #333;
+    border-radius: 5px;
+    height: 6px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .progress {
+    background: #00ff55;
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+    transition: width 1s linear;
+  }
+  
