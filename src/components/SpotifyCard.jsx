@@ -8,7 +8,7 @@ const SpotifyCard = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("http://localhost:4321/api/now-playing");
+      const res = await fetch("https://jasonb.de/api/now-playing");
       const data = await res.json();
       setSong({
         ...data,

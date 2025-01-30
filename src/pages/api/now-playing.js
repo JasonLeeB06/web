@@ -3,7 +3,7 @@ import SpotifyWebApi from 'spotify-web-api-node';
 const spotifyApi = new SpotifyWebApi({
   clientId: 'aca98475f117460eb50dc8c7912f1d09',
   clientSecret: 'e894bc79c3ce45c0b91db8f01be5d04e',
-  redirectUri: 'http://localhost:4321/api/callback'
+  redirectUri: 'https://jasonb.de/api/callback'
 });
 
 spotifyApi.setRefreshToken('AQBpyMqqPqDO_13yjZV4QUQQGreZP9yW-1w0d88YFcDagEvMoD3UH_RvlK9SqURrnrTNld7Kh-Mejn3cDjhBDj65SVJDRPkte7vZQ1AXZHWxTK78yqfarTJd2M2UC2LGFaI');
