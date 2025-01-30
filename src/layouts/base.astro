@@ -35,7 +35,7 @@ import "../scss/index.scss";
 	</body>
 	<script is:inline>
         function setLanguage(lang) {
-          fetch(`/src/translations/${lang}.json`)
+          fetch(`/src/pages/translations/${lang}.json`)
             .then(response => response.json())
             .then(translations => {
 			  document.getElementById('pronouns').innerText = translations.pronouns;
