@@ -4,6 +4,7 @@ import '../scss/SpotifyCard.scss';
 const SpotifyCard = () => {
   const [song, setSong] = createSignal(null);
   const [progress, setProgress] = createSignal(0);
+  const [currentTime, setCurrentTime] = createSignal('0:00');
   let intervalRef = null;
   let progressIntervalRef = null;
 
@@ -23,12 +24,19 @@ const SpotifyCard = () => {
           }),
         });
         setProgress((data.progress_ms / data.duration_ms) * 100);
+        setCurrentTime(formatTime(data.progress_ms));
       } else {
         setSong(null);
       }
     } catch (error) {
       console.error('Fehler beim Abrufen der Now-Playing-Daten:', error);
     }
+  };
+
+  const formatTime = (ms) => {
+    const minutes = Math.floor(ms / 60000);
+    const seconds = ((ms % 60000) / 1000).toFixed(0);
+    return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
   };
 
   onMount(() => {
@@ -38,6 +46,7 @@ const SpotifyCard = () => {
     progressIntervalRef = setInterval(() => {
       if (song()) {
         setProgress(prev => prev + (1000 / song().duration_ms) * 100);
+        setCurrentTime(formatTime(song().progress_ms + 2000));
       }
     }, 2000);
 
@@ -61,8 +70,7 @@ const SpotifyCard = () => {
               <div class="progress" style={{ width: `${progress()}%` }}></div>
             </div>
             <div class="time-info">
-              <span>{formatTime(song().progress_ms)}</span>
-              <span>{formatTime(song().duration_ms - song().progress_ms)}</span>
+              <span>{currentTime()}</span> / <span>{formatTime(song().duration_ms)}</span>
             </div>
           </div>
         </div>
