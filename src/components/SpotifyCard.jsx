@@ -60,6 +60,10 @@ const SpotifyCard = () => {
             <div class="progress-bar">
               <div class="progress" style={{ width: `${progress()}%` }}></div>
             </div>
+            <div class="time-info">
+              <span>{formatTime(song().progress_ms)}</span>
+              <span>{formatTime(song().duration_ms - song().progress_ms)}</span>
+            </div>
           </div>
         </div>
       ) : (
