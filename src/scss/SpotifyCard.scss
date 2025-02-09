@@ -100,3 +100,25 @@
     font-size: 1rem;
     text-align: center;
   }
+
+  .listen-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1DB954; /* Spotify green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .listen-button:hover {
+    background-color: #17a347;
+  }
+
+  .time-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }

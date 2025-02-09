@@ -62,7 +62,7 @@ const SpotifyCard = () => {
         <div class="spotify-card">
           <img src={song().albumImageUrl} alt="Album Cover" class="album-cover" />
           <div class="song-info">
-            <a href={song().songUrl} target="_blank" class="song-title">{song().title}</a>
+            <p class="song-title">{song().title}</p>
             <p class="artist">Artist: {song().artist}</p>
             <p class="album">Album: {song().album}</p>
             <p class="release-date">{song().release_date}</p>
@@ -72,6 +72,7 @@ const SpotifyCard = () => {
             <div class="time-info">
               <span>{currentTime()}</span> / <span>{formatTime(song().duration_ms)}</span>
             </div>
+            <a href={song().songUrl} target="_blank" class="listen-button">Auf Spotify anhören</a>
           </div>
         </div>
       ) : (
