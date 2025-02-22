@@ -5,16 +5,15 @@ const SpotifyCard = () => {
   const [song, setSong] = createSignal(null);
   const [progress, setProgress] = createSignal(0);
   const [currentTime, setCurrentTime] = createSignal('0:00');
-  let intervalRef = null;
-  let progressIntervalRef = null;
+  
+  let intervalRef, progressIntervalRef;
 
-  // Funktion zum Abrufen der Daten
   const fetchData = async () => {
     try {
       const res = await fetch("https://api.jasonb.de/api/now-playing");
       const data = await res.json();
-      
-      if (data && data.isPlaying) {
+
+      if (data?.isPlaying) {
         setSong({
           ...data,
           release_date: new Date(data.release_date).toLocaleDateString('de-DE', {
@@ -35,18 +34,18 @@ const SpotifyCard = () => {
 
   const formatTime = (ms) => {
     const minutes = Math.floor(ms / 60000);
-    const seconds = ((ms % 60000) / 1000).toFixed(0);
-    return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    const seconds = Math.floor((ms % 60000) / 1000);
+    return `${minutes}:${seconds.toString().padStart(2, "0")}`;
   };
 
   onMount(() => {
     fetchData();
-    intervalRef = setInterval(fetchData, 2000);
+    intervalRef = setInterval(fetchData, 1000);
 
     progressIntervalRef = setInterval(() => {
       if (song()) {
-        setProgress(prev => prev + (1000 / song().duration_ms) * 100);
-        setCurrentTime(formatTime(song().progress_ms + 2000));
+        setProgress((prev) => Math.min(prev + (1000 / song().duration_ms) * 100, 100));
+        setCurrentTime((prev) => formatTime(song().progress_ms + 1000));
       }
     }, 2000);
 
